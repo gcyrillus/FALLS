@@ -1,7 +1,7 @@
 <?php if(!defined('PLX_ROOT')) exit; ?>
-
-	<?php if($plxShow->plxMotor->plxRecord_coms): ?>
 		<div id="coms">
+	<?php if($plxShow->plxMotor->plxRecord_coms): ?>
+
 			<h3 id="comments">
 				<?php echo $plxShow->artNbCom(); ?>
 			</h3>
@@ -80,5 +80,5 @@ if(parent!='') { replyCom(parent) }
 		<p>
 			<?php $plxShow->lang('COMMENTS_CLOSED') ?>.
 		</p>
-	</div>
 	<?php endif; # Fin du if sur l'autorisation des commentaires ?>
+	</div>
