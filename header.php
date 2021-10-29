@@ -10,9 +10,9 @@
 	$plxShow->meta('keywords');
 	$plxShow->meta('author');
 ?>
-	<link rel="icon" href="<?php $plxShow->template(); ?>/img/favicon.png" />
-	<link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/reset.css" media="screen,print"/>
-	<link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/falls.css" media="screen,print"/>
+	<link rel="icon" href="<?php $plxShow->template(); ?>/img/favicon.png?ver=1.0" />
+	<link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/reset.css?ver=1.0" media="screen,print"/>
+	<link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/falls.css?ver=1.0" media="screen,print"/>
 <?php
 	$plxShow->templateCss();
 	$plxShow->pluginsCss();
