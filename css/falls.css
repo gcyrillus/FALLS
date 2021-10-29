@@ -61,6 +61,9 @@
   body > footer {
     grid-row: 3;
     grid-column: 2;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
   }
   body > main {
     display: grid;
@@ -160,6 +163,9 @@
     float: right;
     margin-top: 1em;
   }
+  body > footer > a:last-child {
+	  margin-inline-start:auto;
+  }
   main div.author,
   p.date {
     letter-spacing: -1px;
@@ -208,7 +214,7 @@
     text-align: end;
   }
   #coms .comment blockquote,
-  #id_answer {
+  #id_answer:not(:empty) {
     background: rgba(255, 255, 255, 0.2);
     padding: 0.2em;
     color: #555;
@@ -217,6 +223,10 @@
   #coms fieldset {
     padding: 0.5rem 1rem;
     border: none;
+  }
+  #form {
+    max-width:60ch;
+    margin:auto;
   }
   #coms fieldset {
     display: grid;
