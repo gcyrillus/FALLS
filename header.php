@@ -10,9 +10,9 @@
 	$plxShow->meta('keywords');
 	$plxShow->meta('author');
 ?>
-	<link rel="icon" href="<?php $plxShow->template(); ?>/img/favicon.png?ver=1.0" />
-	<link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/reset.css?ver=1.0" media="screen,print"/>
-	<link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/falls.css?ver=1.0" media="screen,print"/>
+	<link rel="icon" href="<?php $plxShow->template(); ?>/img/favicon.png" />
+	<link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/reset.css?t=<?php echo time() ?>" media="screen,print"/>
+	<link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/blue.css?t=<?php echo time() ?>" media="screen,print"/>
 <?php
 	$plxShow->templateCss();
 	$plxShow->pluginsCss();
@@ -27,6 +27,6 @@
 	  <nav>
 		<ul class="menu">
 			<?php $plxShow->staticList($plxShow->getLang('HOME'),'<li class="#static_class #static_status" id="#static_id"><a href="#static_url" title="#static_name">#static_name</a></li>
-			'); ?>
+			','','007'); ?>
 		</ul></nav>
 	</header>
